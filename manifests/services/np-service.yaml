@@ -4,7 +4,7 @@ metadata:
   name: web-app-svc-node-port
 spec:
   selector:
-    app : web-app
+    app: web-app
   ports:
     - port: 80
       targetPort: 80

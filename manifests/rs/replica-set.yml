@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: web-app-rs
   labels:
-    app : web
+    app: web
 spec:
   replicas: 3
   selector:
