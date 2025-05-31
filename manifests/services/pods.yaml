@@ -10,6 +10,13 @@ spec:
       image: nginx:latest
       ports:
         - containerPort: 80
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
 
 ---
 apiVersion: v1
@@ -24,3 +31,10 @@ spec:
       image: nginx:latest
       ports:
         - containerPort: 80
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "128Mi"
+          cpu: "500m" 
